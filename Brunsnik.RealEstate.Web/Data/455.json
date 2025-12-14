@@ -1,0 +1,323 @@
+{
+  "operation": {
+    "put": {
+      "id": "455",
+      "title": "This is a listing used for state-based testing!",
+      "_links": {
+        "self": {
+          "href": "403362128"
+        },
+        "http://data.realestate.com.au/doc/relations#adUrl": null,
+        "http://data.realestate.com.au/doc/relations#projectWebsite": null
+      },
+      "address": {
+        "state": "SA",
+        "suburb": "McLaren Vale",
+        "display": {
+          "geocode": {
+            "latitude": -35.219722,
+            "longitude": 138.541111,
+            "reliability": "property"
+          },
+          "fullAddress": "20 Kerr Road, McLaren Vale, SA 5171",
+          "shortAddress": "20 Kerr Road",
+          "communicationAddress": "20 Kerr Road, McLaren Vale"
+        },
+        "isHidden": false,
+        "postcode": "5171",
+        "_embedded": {
+          "http://data.realestate.com.au/doc/relations#atlasObject": [
+            {
+              "id": "b9b31f34-0a9b-4472-b8bc-35ec76d27a58",
+              "subtype": "suburb"
+            },
+            {
+              "id": "e9d0017f-df7f-4f15-98a8-4f7ad2ec3583",
+              "subtype": "postcode"
+            },
+            {
+              "id": "AU-SA",
+              "subtype": "state"
+            }
+          ]
+        },
+        "streetName": "Kerr Road",
+        "countryCode": "AU",
+        "streetNumber": "20"
+      },
+      "fencing": null,
+      "dateSold": {
+        "date": null,
+        "display": null
+      },
+      "frontage": null,
+      "landSize": null,
+      "_embedded": {
+        "http://data.realestate.com.au/doc/relations#child": [],
+        "http://data.realestate.com.au/doc/relations#event": [],
+        "http://data.realestate.com.au/doc/relations#video": [],
+        "http://data.realestate.com.au/doc/relations#agency": [
+          {
+            "id": "FEXBNP",
+            "_links": {
+              "self": {
+                "href": "../agencies/FEXBNP"
+              }
+            }
+          }
+        ],
+        "http://data.realestate.com.au/doc/relations#parent": [],
+        "http://data.realestate.com.au/doc/relations#attachment": [
+          {
+            "id": "cc0f3cdd0f2fa31086e123af67393daa3edbdad5a9163d261cd4db89e6532f49.jpg",
+            "sha": "cc0f3cdd0f2fa31086e123af67393daa3edbdad5a9163d261cd4db89e6532f49",
+            "type": "image",
+            "caption": null,
+            "extension": "jpg",
+            "orderIndex": 0,
+            "templatedUrl": "https://i2.au.reastatic.net/{size}/cc0f3cdd0f2fa31086e123af67393daa3edbdad5a9163d261cd4db89e6532f49/main.jpg"
+          },
+          {
+            "id": "8e9b78b962a7d38fbc4414e960f882ab673cbfbdeb9d44ee6d50136dddc11945.jpg",
+            "sha": "8e9b78b962a7d38fbc4414e960f882ab673cbfbdeb9d44ee6d50136dddc11945",
+            "type": "image",
+            "caption": null,
+            "extension": "jpg",
+            "orderIndex": 1,
+            "templatedUrl": "https://i2.au.reastatic.net/{size}/8e9b78b962a7d38fbc4414e960f882ab673cbfbdeb9d44ee6d50136dddc11945/image2.jpg"
+          },
+          {
+            "id": "b38aca78ac48efc68e78a5cdf54ace185230e6a97886bbbe6682df96f1f96886.jpg",
+            "sha": "b38aca78ac48efc68e78a5cdf54ace185230e6a97886bbbe6682df96f1f96886",
+            "type": "image",
+            "caption": null,
+            "extension": "jpg",
+            "orderIndex": 2,
+            "templatedUrl": "https://i2.au.reastatic.net/{size}/b38aca78ac48efc68e78a5cdf54ace185230e6a97886bbbe6682df96f1f96886/image3.jpg"
+          },
+          {
+            "id": "d7fec6ce1c506988184c144db38a2dabb5b07cd1ca452d44d8cc93eeb48439e1.jpg",
+            "sha": "d7fec6ce1c506988184c144db38a2dabb5b07cd1ca452d44d8cc93eeb48439e1",
+            "type": "image",
+            "caption": null,
+            "extension": "jpg",
+            "orderIndex": 3,
+            "templatedUrl": "https://i2.au.reastatic.net/{size}/d7fec6ce1c506988184c144db38a2dabb5b07cd1ca452d44d8cc93eeb48439e1/image4.jpg"
+          },
+          {
+            "id": "fd429a71b973af3853122c077d9a8cd59c517dcb6b9c2996034d6d4589b6bc48.jpg",
+            "sha": "fd429a71b973af3853122c077d9a8cd59c517dcb6b9c2996034d6d4589b6bc48",
+            "type": "image",
+            "caption": null,
+            "extension": "jpg",
+            "orderIndex": 4,
+            "templatedUrl": "https://i2.au.reastatic.net/{size}/fd429a71b973af3853122c077d9a8cd59c517dcb6b9c2996034d6d4589b6bc48/image5.jpg"
+          },
+          {
+            "id": "8cc98a202cff58474272300acd15e775db09d604ba9e7e08b917f801a3bc59f4.jpg",
+            "sha": "8cc98a202cff58474272300acd15e775db09d604ba9e7e08b917f801a3bc59f4",
+            "type": "image",
+            "caption": null,
+            "extension": "jpg",
+            "orderIndex": 5,
+            "templatedUrl": "https://i2.au.reastatic.net/{size}/8cc98a202cff58474272300acd15e775db09d604ba9e7e08b917f801a3bc59f4/image6.jpg"
+          },
+          {
+            "id": "9033a3f3271ce458b93c048a0ed2758305e4c0fd6d770421a19c5935f118ea64.jpg",
+            "sha": "9033a3f3271ce458b93c048a0ed2758305e4c0fd6d770421a19c5935f118ea64",
+            "type": "image",
+            "caption": null,
+            "extension": "jpg",
+            "orderIndex": 6,
+            "templatedUrl": "https://i2.au.reastatic.net/{size}/9033a3f3271ce458b93c048a0ed2758305e4c0fd6d770421a19c5935f118ea64/image7.jpg"
+          },
+          {
+            "id": "ba9311ab15aae9b91d475c493e51b5e0349c15250068481e0268790c7aa959fa.jpg",
+            "sha": "ba9311ab15aae9b91d475c493e51b5e0349c15250068481e0268790c7aa959fa",
+            "type": "image",
+            "caption": null,
+            "extension": "jpg",
+            "orderIndex": 7,
+            "templatedUrl": "https://i2.au.reastatic.net/{size}/ba9311ab15aae9b91d475c493e51b5e0349c15250068481e0268790c7aa959fa/image8.jpg"
+          },
+          {
+            "id": "7ca748c1fa83547d33a34a2ce5003eca67aa02c09e085adc41be1f3b31d28ddd.jpg",
+            "sha": "7ca748c1fa83547d33a34a2ce5003eca67aa02c09e085adc41be1f3b31d28ddd",
+            "type": "image",
+            "caption": null,
+            "extension": "jpg",
+            "orderIndex": 8,
+            "templatedUrl": "https://i2.au.reastatic.net/{size}/7ca748c1fa83547d33a34a2ce5003eca67aa02c09e085adc41be1f3b31d28ddd/image9.jpg"
+          },
+          {
+            "id": "42683f92832377dc5594ca3b6b8221f0b6606ad13d498925ad9be6e02028dd82.jpg",
+            "sha": "42683f92832377dc5594ca3b6b8221f0b6606ad13d498925ad9be6e02028dd82",
+            "type": "image",
+            "caption": null,
+            "extension": "jpg",
+            "orderIndex": 9,
+            "templatedUrl": "https://i2.au.reastatic.net/{size}/42683f92832377dc5594ca3b6b8221f0b6606ad13d498925ad9be6e02028dd82/image10.jpg"
+          },
+          {
+            "id": "d78d51d640b46db0d62b0c1f9b5fefd55ec32489893a915f7e4870e74bab582f.jpg",
+            "sha": "d78d51d640b46db0d62b0c1f9b5fefd55ec32489893a915f7e4870e74bab582f",
+            "type": "image",
+            "caption": null,
+            "extension": "jpg",
+            "orderIndex": 10,
+            "templatedUrl": "https://i2.au.reastatic.net/{size}/d78d51d640b46db0d62b0c1f9b5fefd55ec32489893a915f7e4870e74bab582f/image11.jpg"
+          },
+          {
+            "id": "9c6971dbc75c01880ea01551ff7808062c59196ffc00e812d6d8b64aebf645bf.jpg",
+            "sha": "9c6971dbc75c01880ea01551ff7808062c59196ffc00e812d6d8b64aebf645bf",
+            "type": "image",
+            "caption": null,
+            "extension": "jpg",
+            "orderIndex": 11,
+            "templatedUrl": "https://i2.au.reastatic.net/{size}/9c6971dbc75c01880ea01551ff7808062c59196ffc00e812d6d8b64aebf645bf/image12.jpg"
+          }
+        ],
+        "http://data.realestate.com.au/doc/relations#salesperson": [
+          {
+            "id": "1707926",
+            "_links": {
+              "self": {
+                "href": "../salespeople/1707926"
+              }
+            }
+          }
+        ],
+        "http://data.realestate.com.au/doc/relations#listingDepth": [],
+        "http://data.realestate.com.au/doc/relations#primaryUsage": [
+          {
+            "id": "house"
+          }
+        ],
+        "http://data.realestate.com.au/doc/relations#listingFeature": [
+          {
+            "id": "builtInRobes"
+          }
+        ],
+        "http://data.realestate.com.au/doc/relations#listingUpgrade": null,
+        "http://data.realestate.com.au/doc/relations#secondaryUsage": []
+      },
+      "audiences": [
+        "realestate.com.au",
+        "studio"
+      ],
+      "crossover": null,
+      "leftDepth": null,
+      "rearDepth": null,
+      "soilTypes": null,
+      "soldPrice": {
+        "display": {
+          "fullSoldPrice": null,
+          "shortSoldPrice": null,
+          "advertisingRange": null
+        }
+      },
+      "totalSize": null,
+      "yearBuilt": null,
+      "dateActive": "2023-08-16",
+      "highlights": [],
+      "irrigation": null,
+      "numToilets": null,
+      "rightDepth": null,
+      "description": "Neat & tidy 3 bedroom house and pet-friendly.<br/><br/>Features of the house include:<br/><br/>* Ceiling fans<br/>* Built in robes<br/>* New linoleum installed in kitchen, bathroom and toilet<br/>* Good size living room<br/>* South-facing verandah<br/><br/>A small pet may be considered by the owner.<br/>",
+      "marketFlags": [
+        "leasable"
+      ],
+      "numBedrooms": 3,
+      "numEnsuites": null,
+      "publication": [
+        {
+          "data": {
+            "productId": "standard",
+            "showAgencyBranding": false
+          },
+          "type": "product",
+          "endDate": null,
+          "audience": "realestate.com.au:rent",
+          "startDate": "2023-08-16T00:00:00+10:00"
+        },
+        {
+          "data": {
+            "productId": "standard",
+            "showAgencyBranding": false
+          },
+          "type": "product",
+          "endDate": null,
+          "audience": "studio:rent",
+          "startDate": "2023-08-16T00:00:00+10:00"
+        }
+      ],
+      "buildingSize": null,
+      "councilRates": null,
+      "improvements": null,
+      "numBathrooms": 1,
+      "businessPhone": null,
+      "dateAvailable": {
+        "date": "2023-08-16",
+        "display": "Wed 16 August 2023"
+      },
+      "isOnTheMarket": true,
+      "isPublishable": true,
+      "parkingSpaces": {
+        "total": 1,
+        "numOpenSpaces": null,
+        "numGarageSpaces": 1,
+        "numCarportSpaces": null
+      },
+      "annualRainfall": null,
+      "dateTimeActive": "2023-08-15T14:00:00Z",
+      "emailAddresses": [],
+      "financialTerms": {
+        "lease": {
+          "bond": {
+            "value": 1280
+          },
+          "display": {
+            "bond": "$1,280",
+            "pricePerWeek": "$320 per week",
+            "pricePerMonth": "",
+            "advertisingRange": "250pw_350pw"
+          },
+          "isHidden": false,
+          "pricePerWeek": {
+            "value": 320
+          },
+          "pricePerMonth": {}
+        }
+      },
+      "lastModifiedAt": "2023-08-15T19:38:12Z",
+      "numLivingAreas": null,
+      "listingStatuses": [],
+      "newConstruction": false,
+      "carryingCapacity": null,
+      "externalListingId": "d9df3fa5-e19d-49ac-bf92-5b3185eec459",
+      "yearLastRenovated": null,
+      "publicationMetaData": {
+        "audiences": [
+          "realestate.com.au"
+        ],
+        "agencyFlags": {
+          "isSuspended": false,
+          "validSubscription": true
+        },
+        "marketFlags": [
+          "leasable"
+        ],
+        "dateTimeExpiry": null,
+        "parentPublicationMetaData": null
+      },
+      "energyEfficiencyRating": null,
+      "dateEstimatedCompletion": {
+        "date": null,
+        "display": null
+      },
+      "textTotalNumberProperties": null
+    }
+  },
+  "processedAt": "2023-08-15T20:22:12.3Z",
+  "documentType": "listing"
+}

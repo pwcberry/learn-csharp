@@ -1,0 +1,323 @@
+{
+  "operation": {
+    "put": {
+      "id": "450",
+      "title": "This is a listing used for testing!",
+      "_links": {
+        "self": {
+          "href": "426262030"
+        },
+        "http://data.realestate.com.au/doc/relations#adUrl": null,
+        "http://data.realestate.com.au/doc/relations#agencyUrl": [
+          {
+            "href": "http://www.bigginscott.com.au/property.cfm?propertyID=XBSRIC_r6569"
+          }
+        ],
+        "http://data.realestate.com.au/doc/relations#projectWebsite": null
+      },
+      "address": {
+        "state": "Vic",
+        "suburb": "Richmond",
+        "display": {
+          "geocode": {
+            "latitude": -37.818041,
+            "longitude": 144.990279,
+            "reliability": "property"
+          },
+          "fullAddress": "199/12 Test Boulevard, Richmond, Vic 3121",
+          "shortAddress": "199/12 Test Boulevard",
+          "communicationAddress": "199/12 Test Boulevard, Richmond"
+        },
+        "isHidden": false,
+        "postcode": "3121",
+        "_embedded": {
+          "http://data.realestate.com.au/doc/relations#atlasObject": [
+            {
+              "id": "8ece3e33-d411-4ae8-b479-f6bd6c0f403f",
+              "subtype": "suburb"
+            },
+            {
+              "id": "2e073309-47d5-4326-937a-e356cbd5bf24",
+              "subtype": "postcode"
+            },
+            {
+              "id": "AU-VIC",
+              "subtype": "state"
+            }
+          ]
+        },
+        "streetName": "Punt Road",
+        "countryCode": "AU",
+        "streetNumber": "199"
+      },
+      "fencing": null,
+      "dateSold": {
+        "date": null,
+        "display": null
+      },
+      "frontage": null,
+      "landSize": null,
+      "_embedded": {
+        "http://data.realestate.com.au/doc/relations#child": [],
+        "http://data.realestate.com.au/doc/relations#event": [
+          {
+            "id": "426262030-00005cb6d274",
+            "type": "inspection",
+            "endTime": "2019-04-17T07:30:00.000Z",
+            "startTime": "2019-04-17T07:15:00.000Z",
+            "endLocalTime": "2019-04-17T17:30:00+10:00",
+            "startLocalTime": "2019-04-17T17:15:00+10:00"
+          },
+          {
+            "id": "426262030-00005cb7e830",
+            "type": "inspection",
+            "endTime": "2019-04-18T03:15:00.000Z",
+            "startTime": "2019-04-18T03:00:00.000Z",
+            "endLocalTime": "2019-04-18T13:15:00+10:00",
+            "startLocalTime": "2019-04-18T13:00:00+10:00"
+          }
+        ],
+        "http://data.realestate.com.au/doc/relations#video": [],
+        "http://data.realestate.com.au/doc/relations#agency": [
+          {
+            "id": "VKSYFQ",
+            "_links": {
+              "self": {
+                "href": "../agencies/VKSYFQ"
+              }
+            }
+          }
+        ],
+        "http://data.realestate.com.au/doc/relations#parent": [],
+        "http://data.realestate.com.au/doc/relations#attachment": [
+          {
+            "id": "01db1080701a0c6995305ece6b5794e9028a927bea1425982adca9e617386362.jpg",
+            "sha": "01db1080701a0c6995305ece6b5794e9028a927bea1425982adca9e617386362",
+            "type": "image",
+            "caption": null,
+            "extension": "jpg",
+            "orderIndex": 0,
+            "templatedUrl": "https://i2.au.reastatic.net/{size}/01db1080701a0c6995305ece6b5794e9028a927bea1425982adca9e617386362/main.jpg"
+          },
+          {
+            "id": "f862afb519bab8b199c8c0f5ed7dea83ba8b681f386903d16faa493d4812bbf0.jpg",
+            "sha": "f862afb519bab8b199c8c0f5ed7dea83ba8b681f386903d16faa493d4812bbf0",
+            "type": "image",
+            "caption": null,
+            "extension": "jpg",
+            "orderIndex": 1,
+            "templatedUrl": "https://i2.au.reastatic.net/{size}/f862afb519bab8b199c8c0f5ed7dea83ba8b681f386903d16faa493d4812bbf0/image2.jpg"
+          },
+          {
+            "id": "182bac8cad548f8ed377b66e416c40adf06cef1cd5695669a00f2898f7acf9cd.jpg",
+            "sha": "182bac8cad548f8ed377b66e416c40adf06cef1cd5695669a00f2898f7acf9cd",
+            "type": "image",
+            "caption": null,
+            "extension": "jpg",
+            "orderIndex": 2,
+            "templatedUrl": "https://i2.au.reastatic.net/{size}/182bac8cad548f8ed377b66e416c40adf06cef1cd5695669a00f2898f7acf9cd/image3.jpg"
+          },
+          {
+            "id": "c796c7def54498a8a832c9b98955f96183d4251330a9bd10410decdfc9ac0742.jpg",
+            "sha": "c796c7def54498a8a832c9b98955f96183d4251330a9bd10410decdfc9ac0742",
+            "type": "image",
+            "caption": null,
+            "extension": "jpg",
+            "orderIndex": 3,
+            "templatedUrl": "https://i2.au.reastatic.net/{size}/c796c7def54498a8a832c9b98955f96183d4251330a9bd10410decdfc9ac0742/image4.jpg"
+          },
+          {
+            "id": "333ccdd4d3114151b9025ab6f2d27b383360475a0527e52c7aaab10a12f1474d.jpg",
+            "sha": "333ccdd4d3114151b9025ab6f2d27b383360475a0527e52c7aaab10a12f1474d",
+            "type": "image",
+            "caption": null,
+            "extension": "jpg",
+            "orderIndex": 4,
+            "templatedUrl": "https://i2.au.reastatic.net/{size}/333ccdd4d3114151b9025ab6f2d27b383360475a0527e52c7aaab10a12f1474d/image5.jpg"
+          },
+          {
+            "id": "7259640fbff9c5a2c007ff3e7c5ec1984b7490740318ae3e09735710618c4128.jpg",
+            "sha": "7259640fbff9c5a2c007ff3e7c5ec1984b7490740318ae3e09735710618c4128",
+            "type": "image",
+            "caption": null,
+            "extension": "jpg",
+            "orderIndex": 5,
+            "templatedUrl": "https://i2.au.reastatic.net/{size}/7259640fbff9c5a2c007ff3e7c5ec1984b7490740318ae3e09735710618c4128/image6.jpg"
+          },
+          {
+            "id": "c7c7ac3aadd0d950d75369daf4f38ab0e33fb24f9f019f63bbba7225b2ce8abb.jpg",
+            "sha": "c7c7ac3aadd0d950d75369daf4f38ab0e33fb24f9f019f63bbba7225b2ce8abb",
+            "type": "floorplan",
+            "caption": null,
+            "extension": "jpg",
+            "orderIndex": 0,
+            "templatedUrl": "https://i2.au.reastatic.net/{size}/c7c7ac3aadd0d950d75369daf4f38ab0e33fb24f9f019f63bbba7225b2ce8abb/floorplan1.jpg"
+          }
+        ],
+        "http://data.realestate.com.au/doc/relations#salesperson": [
+          {
+            "id": "1707926",
+            "_links": {
+              "self": {
+                "href": "../salespeople/1707926"
+              }
+            }
+          }
+        ],
+        "http://data.realestate.com.au/doc/relations#listingDepth": [
+          {
+            "endDate": "2019-05-08T13:29:58+10:00",
+            "_embedded": {
+              "http://data.realestate.com.au/doc/relations#listingProduct": {
+                "id": "premiere"
+              }
+            },
+            "startDate": "2019-04-08T13:29:58+10:00",
+            "deletedDate": null,
+            "exceptionApplied": null
+          }
+        ],
+        "http://data.realestate.com.au/doc/relations#primaryUsage": [
+          {
+            "id": "apartment"
+          }
+        ],
+        "http://data.realestate.com.au/doc/relations#listingFeature": [],
+        "http://data.realestate.com.au/doc/relations#listingUpgrade": {
+          "endDate": "2019-05-08T13:29:58+10:00",
+          "_embedded": {
+            "http://data.realestate.com.au/doc/relations#listingProduct": {
+              "id": "premiere"
+            }
+          },
+          "startDate": "2019-04-08T13:29:58+10:00",
+          "deletedDate": null,
+          "exceptionApplied": null
+        },
+        "http://data.realestate.com.au/doc/relations#secondaryUsage": []
+      },
+      "audiences": [
+        "realestate.com.au"
+      ],
+      "crossover": null,
+      "leftDepth": null,
+      "rearDepth": null,
+      "soilTypes": null,
+      "soldPrice": {
+        "display": {
+          "fullSoldPrice": null,
+          "shortSoldPrice": null,
+          "advertisingRange": null
+        }
+      },
+      "totalSize": null,
+      "yearBuilt": null,
+      "dateActive": "2019-04-08",
+      "highlights": [],
+      "irrigation": null,
+      "numToilets": null,
+      "rightDepth": null,
+      "description": "FURNISHED ONE BEDROOM APARTMENT WITH ACCESS TO THE BEST OF RICHMOND AT YOUR DOOR!<br/> Pets on Application <br/> <br/>Freshly painted with new carpets and fittings, this bright and comfortable second level apartment is not to be missed. Offering the best of inner-city living, this apartment is a stone’s throw from some of Melbourne's best cafes and restaurants, walking distance to the MCG and parks and just metres away from public transport. <br/><br/> Featuring:<br/><br/>- A private north-facing balcony<br/>- Modern open plan kitchen with stainless steel appliances<br/>- Master bedroom with built in robes<br/>- Sparkling bathroom<br/>- European laundry<br/>- Reverse cycle heating/cooling<br/>- Security entrance <br/><br/>REGISTRATION REQUIRED TO INSPECT. Please ensure you click ENQUIRE NOW to be sent the registration email. Once you have registered your interest you will be notified of any changes. <br/>VIEW TIMES are displayed on this page. View times are subject to cancellation/change until 12pm on the day of open. We advise you check the listing on the day, to ensure property still available prior to inspection to avoid disappointment. <br/>APPLYING - Apply online via 1FORM by clicking the link on advert. <br/>LEASE TERMS - 12 MTHS unless otherwise specified.<br/>Only if 'KEY IN OFFICE' is displayed in the advert HEADING, the property is available for inspection by collecting the keys from our office. Terms and conditions apply.  <br/>PARKING PERMITS - Whilst parking permits are available for most properties, please confirm with the local council before applying for the property. <br/>PHOTO ID MUST BE PROVIDED BEFORE ENTRY AT THE PROPERTY OR IN THE OFFICE WHEN COLLECTING KEYS<br/>GUARANTEED RESPONSE WITHIN 1 BUSINESS DAY (Conditions Apply)<br/><br/>BIGGIN SCOTT RICHMOND - NO 1 FOR PROPERTY MANAGEMENT<br/><br/>    ",
+      "marketFlags": [
+        "leasable"
+      ],
+      "numBedrooms": 1,
+      "numEnsuites": null,
+      "publication": [
+        {
+          "data": {
+            "rotation": {
+              "baseDate": "2019-04-08T13:29:58+10:00",
+              "frequency": 15
+            },
+            "productId": "premiere"
+          },
+          "type": "product",
+          "endDate": "2019-05-08T13:29:58+10:00",
+          "audience": "realestate.com.au:rent",
+          "startDate": "2019-04-08T13:29:58+10:00"
+        },
+        {
+          "data": {
+            "productId": "standard",
+            "showAgencyBranding": true
+          },
+          "type": "product",
+          "endDate": null,
+          "audience": "realestate.com.au:rent",
+          "startDate": "2019-05-08T13:29:58+10:00"
+        }
+      ],
+      "buildingSize": null,
+      "councilRates": null,
+      "improvements": null,
+      "numBathrooms": 1,
+      "businessPhone": null,
+      "dateAvailable": {
+        "date": "2019-04-10",
+        "display": "Wed 10 Apr 2019"
+      },
+      "isOnTheMarket": true,
+      "isPublishable": true,
+      "otherFeatures": "",
+      "parkingSpaces": {
+        "total": 0,
+        "numOpenSpaces": null,
+        "numGarageSpaces": null,
+        "numCarportSpaces": null
+      },
+      "annualRainfall": null,
+      "dateTimeActive": "2019-04-08T03:29:57Z",
+      "emailAddresses": [],
+      "financialTerms": {
+        "lease": {
+          "bond": {
+            "value": 1608
+          },
+          "display": {
+            "bond": "\n      $370 per week \n    ",
+            "pricePerWeek": "\n      $370 per week \n    ",
+            "pricePerMonth": "\n      $370 per week \n    ",
+            "advertisingRange": "350pw_450pw"
+          },
+          "isHidden": true,
+          "pricePerWeek": {
+            "value": 370
+          },
+          "pricePerMonth": {}
+        }
+      },
+      "lastModifiedAt": "2019-04-14T23:11:07Z",
+      "numLivingAreas": null,
+      "listingStatuses": [],
+      "newConstruction": false,
+      "carryingCapacity": null,
+      "externalListingId": "XBSRIC_r6569",
+      "yearLastRenovated": null,
+      "publicationMetaData": {
+        "audiences": [
+          "realestate.com.au"
+        ],
+        "agencyFlags": {
+          "isSuspended": false,
+          "validSubscription": true
+        },
+        "marketFlags": [
+          "leasable"
+        ],
+        "dateTimeExpiry": null,
+        "parentPublicationMetaData": null
+      },
+      "listingCategoryGroup": "Rental",
+      "energyEfficiencyRating": null,
+      "dateEstimatedCompletion": {
+        "date": null,
+        "display": null
+      },
+      "textTotalNumberProperties": null
+    }
+  },
+  "eventId": "test-listing",
+  "processedAt": "1970-01-01T00:00Z",
+  "documentType": "listing"
+}

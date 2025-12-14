@@ -1,0 +1,297 @@
+{
+  "operation": {
+    "put": {
+      "id": "453",
+      "title": "This is a listing used for testing!",
+      "_links": {
+        "self": {
+          "href": "425958686"
+        },
+        "http://data.realestate.com.au/doc/relations#adUrl": null,
+        "http://data.realestate.com.au/doc/relations#projectWebsite": null
+      },
+      "address": {
+        "state": "Vic",
+        "suburb": "South Yarra",
+        "display": {
+          "geocode": {
+            "latitude": -37.831908,
+            "longitude": 144.98862,
+            "reliability": "property"
+          },
+          "fullAddress": "2/4-6 Test Street, South Yarra, Vic 3141",
+          "shortAddress": "2/4-6 Test Street",
+          "communicationAddress": "2/4-6 Test Street, South Yarra"
+        },
+        "isHidden": false,
+        "postcode": "3141",
+        "_embedded": {
+          "http://data.realestate.com.au/doc/relations#atlasObject": [
+            {
+              "id": "04dbf258-88aa-48e2-9080-bb439a1cece2",
+              "subtype": "suburb"
+            },
+            {
+              "id": "49e69f3e-0e5b-44dd-9397-9929887f4089",
+              "subtype": "postcode"
+            },
+            {
+              "id": "AU-VIC",
+              "subtype": "state"
+            }
+          ]
+        },
+        "streetName": "Dobson Street",
+        "countryCode": "AU",
+        "streetNumber": "4-6"
+      },
+      "fencing": null,
+      "dateSold": {
+        "date": null,
+        "display": null
+      },
+      "frontage": null,
+      "landSize": null,
+      "_embedded": {
+        "http://data.realestate.com.au/doc/relations#child": [],
+        "http://data.realestate.com.au/doc/relations#event": [],
+        "http://data.realestate.com.au/doc/relations#video": [],
+        "http://data.realestate.com.au/doc/relations#agency": [
+          {
+            "id": "VKSYFQ",
+            "_links": {
+              "self": {
+                "href": "../agencies/VKSYFQ"
+              }
+            }
+          }
+        ],
+        "http://data.realestate.com.au/doc/relations#parent": [],
+        "http://data.realestate.com.au/doc/relations#attachment": [
+          {
+            "id": "f1e22205ba006c57b8cfdc8a0deca840b7e4bdb1edbc2a2fbd7ef34de7ae0a83.jpg",
+            "sha": "f1e22205ba006c57b8cfdc8a0deca840b7e4bdb1edbc2a2fbd7ef34de7ae0a83",
+            "type": "image",
+            "caption": null,
+            "extension": "jpg",
+            "orderIndex": 0,
+            "templatedUrl": "https://i2.au.reastatic.net/{size}/f1e22205ba006c57b8cfdc8a0deca840b7e4bdb1edbc2a2fbd7ef34de7ae0a83/main.jpg"
+          },
+          {
+            "id": "d4f25ccd0b4bd43e2daf316d4c0ee7311b68065342185f491871f33133bb507a.jpg",
+            "sha": "d4f25ccd0b4bd43e2daf316d4c0ee7311b68065342185f491871f33133bb507a",
+            "type": "image",
+            "caption": null,
+            "extension": "jpg",
+            "orderIndex": 1,
+            "templatedUrl": "https://i2.au.reastatic.net/{size}/d4f25ccd0b4bd43e2daf316d4c0ee7311b68065342185f491871f33133bb507a/image2.jpg"
+          },
+          {
+            "id": "64c33b74cfac580767be11d568a4fc29702354a95ebbebd61cd48ba2bc2827ab.jpg",
+            "sha": "64c33b74cfac580767be11d568a4fc29702354a95ebbebd61cd48ba2bc2827ab",
+            "type": "image",
+            "caption": null,
+            "extension": "jpg",
+            "orderIndex": 2,
+            "templatedUrl": "https://i2.au.reastatic.net/{size}/64c33b74cfac580767be11d568a4fc29702354a95ebbebd61cd48ba2bc2827ab/image3.jpg"
+          },
+          {
+            "id": "bd5240568cba651f23202b57d85115e0fa68d202bbbfc43c86ed2bfcf9ea4aec.jpg",
+            "sha": "bd5240568cba651f23202b57d85115e0fa68d202bbbfc43c86ed2bfcf9ea4aec",
+            "type": "image",
+            "caption": null,
+            "extension": "jpg",
+            "orderIndex": 3,
+            "templatedUrl": "https://i2.au.reastatic.net/{size}/bd5240568cba651f23202b57d85115e0fa68d202bbbfc43c86ed2bfcf9ea4aec/image4.jpg"
+          },
+          {
+            "id": "f93bdec06c36782508fc886bf8f04880f36ec58f51f5643e5652711d940370d5.jpg",
+            "sha": "f93bdec06c36782508fc886bf8f04880f36ec58f51f5643e5652711d940370d5",
+            "type": "image",
+            "caption": null,
+            "extension": "jpg",
+            "orderIndex": 4,
+            "templatedUrl": "https://i2.au.reastatic.net/{size}/f93bdec06c36782508fc886bf8f04880f36ec58f51f5643e5652711d940370d5/image5.jpg"
+          },
+          {
+            "id": "c19be42c4909a33daba9bc8a8c7de0b6ad3333a6c0e2920e4fc70991dcc2b490.jpg",
+            "sha": "c19be42c4909a33daba9bc8a8c7de0b6ad3333a6c0e2920e4fc70991dcc2b490",
+            "type": "image",
+            "caption": null,
+            "extension": "jpg",
+            "orderIndex": 5,
+            "templatedUrl": "https://i2.au.reastatic.net/{size}/c19be42c4909a33daba9bc8a8c7de0b6ad3333a6c0e2920e4fc70991dcc2b490/image6.jpg"
+          },
+          {
+            "id": "1695902b5492a834242ef51bfee198c7585746906377ab48dd312275d9bfb5f7.jpg",
+            "sha": "1695902b5492a834242ef51bfee198c7585746906377ab48dd312275d9bfb5f7",
+            "type": "image",
+            "caption": null,
+            "extension": "jpg",
+            "orderIndex": 6,
+            "templatedUrl": "https://i2.au.reastatic.net/{size}/1695902b5492a834242ef51bfee198c7585746906377ab48dd312275d9bfb5f7/image7.jpg"
+          },
+          {
+            "id": "aef4eb838d2634a0502e5cad42d5d49cc53489f96592d4499f15e64c7e1abaa4.jpg",
+            "sha": "aef4eb838d2634a0502e5cad42d5d49cc53489f96592d4499f15e64c7e1abaa4",
+            "type": "image",
+            "caption": null,
+            "extension": "jpg",
+            "orderIndex": 7,
+            "templatedUrl": "https://i2.au.reastatic.net/{size}/aef4eb838d2634a0502e5cad42d5d49cc53489f96592d4499f15e64c7e1abaa4/image8.jpg"
+          },
+          {
+            "id": "a33abcd44bb6b8a172a8ce0af44ceb453d6ed22cd380c8332f9262dc278b8c2a.jpg",
+            "sha": "a33abcd44bb6b8a172a8ce0af44ceb453d6ed22cd380c8332f9262dc278b8c2a",
+            "type": "image",
+            "caption": null,
+            "extension": "jpg",
+            "orderIndex": 8,
+            "templatedUrl": "https://i2.au.reastatic.net/{size}/a33abcd44bb6b8a172a8ce0af44ceb453d6ed22cd380c8332f9262dc278b8c2a/image9.jpg"
+          }
+        ],
+        "http://data.realestate.com.au/doc/relations#salesperson": [
+          {
+            "id": "1707926",
+            "_links": {
+              "self": {
+                "href": "../salespeople/1707926"
+              }
+            }
+          }
+        ],
+        "http://data.realestate.com.au/doc/relations#listingDepth": [],
+        "http://data.realestate.com.au/doc/relations#primaryUsage": [
+          {
+            "id": "apartment"
+          }
+        ],
+        "http://data.realestate.com.au/doc/relations#listingFeature": [
+          {
+            "id": "petFriendly"
+          },
+          {
+            "id": "courtyard"
+          },
+          {
+            "id": "fullyFenced"
+          },
+          {
+            "id": "builtInRobes"
+          },
+          {
+            "id": "reverseCycleAirCon"
+          }
+        ],
+        "http://data.realestate.com.au/doc/relations#listingUpgrade": null,
+        "http://data.realestate.com.au/doc/relations#secondaryUsage": []
+      },
+      "audiences": [
+        "realestate.com.au"
+      ],
+      "crossover": null,
+      "leftDepth": null,
+      "rearDepth": null,
+      "soilTypes": null,
+      "soldPrice": {
+        "display": {
+          "fullSoldPrice": null,
+          "shortSoldPrice": null,
+          "advertisingRange": null
+        }
+      },
+      "totalSize": null,
+      "yearBuilt": null,
+      "dateActive": "2019-02-26",
+      "highlights": [],
+      "irrigation": null,
+      "numToilets": 1,
+      "rightDepth": null,
+      "description": "Phone enquiry code for this property: 1360<br/>Disclaimer: We have been furnished with the above information<br/>This roomy one bedroom apartment is ideal for anyone looking to live on the city fringe. The large lounge room overlooks the fenced courtyard that in turn overlooks the river. The main features are:<br/><br/>•\tFloorboards<br/>•\tNew kitchen, coffee machine<br/>•\tNew bathroom, shower and full size, deep bath<br/>•\tFreshly painted<br/>        Dyson stick vacuum cleaner<br/>•\tShared laundry on-site<br/>•\tBus stop and bike path are literally at the door<br/>•\tThree blocks from Botanical Gardens<br/>•\tSituated on the Yarra River<br/>•\tWalking distance to Chapel Street, Toorak Road and train stations<br/>•\tLawson Grove Café is just around the corner<br/>        Internet provided<br/><br/>. One single rattan day bed and one single pull out bed provided. Other beds to be provided by tenant.<br/>No TV provided.<br/><br/>Phone enquiry code for this property: 1360",
+      "marketFlags": [
+        "leasable"
+      ],
+      "numBedrooms": 1,
+      "numEnsuites": null,
+      "publication": [
+        {
+          "data": {
+            "productId": "standard",
+            "showAgencyBranding": false
+          },
+          "type": "product",
+          "endDate": null,
+          "audience": "realestate.com.au:rent",
+          "startDate": "2019-02-26T00:00:00+11:00"
+        }
+      ],
+      "buildingSize": null,
+      "councilRates": null,
+      "improvements": null,
+      "numBathrooms": 1,
+      "businessPhone": null,
+      "dateAvailable": {
+        "date": "2019-04-14",
+        "display": "Sun 14 Apr 2019"
+      },
+      "isOnTheMarket": true,
+      "isPublishable": true,
+      "parkingSpaces": {
+        "total": 1,
+        "numOpenSpaces": 1,
+        "numGarageSpaces": null,
+        "numCarportSpaces": null
+      },
+      "annualRainfall": null,
+      "dateTimeActive": "2019-02-26T07:00:15Z",
+      "emailAddresses": [],
+      "financialTerms": {
+        "lease": {
+          "bond": {
+            "value": 2400
+          },
+          "display": {
+            "bond": "$600 per week",
+            "pricePerWeek": "$600 per week",
+            "pricePerMonth": "$600 per week",
+            "advertisingRange": "600pw_750pw"
+          },
+          "isHidden": true,
+          "pricePerWeek": {
+            "value": 600
+          },
+          "pricePerMonth": {}
+        }
+      },
+      "lastModifiedAt": "2019-03-21T15:39:45Z",
+      "numLivingAreas": 1,
+      "listingStatuses": [],
+      "newConstruction": false,
+      "carryingCapacity": null,
+      "externalListingId": "420012382",
+      "yearLastRenovated": null,
+      "publicationMetaData": {
+        "audiences": [
+          "realestate.com.au"
+        ],
+        "agencyFlags": {
+          "isSuspended": false,
+          "validSubscription": true
+        },
+        "marketFlags": [
+          "leasable"
+        ],
+        "dateTimeExpiry": null,
+        "parentPublicationMetaData": null
+      },
+      "energyEfficiencyRating": null,
+      "dateEstimatedCompletion": {
+        "date": null,
+        "display": null
+      },
+      "textTotalNumberProperties": null
+    }
+  },
+  "processedAt": "2019-03-21T15:40:52.806Z",
+  "documentType": "listing"
+}
