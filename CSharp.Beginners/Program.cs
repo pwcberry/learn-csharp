@@ -1,5 +1,32 @@
 ﻿using CSharp.Beginners;
 
+var commandLine = new InputCommands();
+CommandResult command = commandLine.ParseArgs(args);
+
+if (command.Errors.Count == 0)
+{
+    if (command.Name == "sum")
+    {
+        string[] numbers = command.UnmatchedTokens.ToArray();
+        string multiplier = command.Options["--multiply"] ?? "1";
+        string precision = command.Options["--precision"] ?? "0";
+        string sumResult = SumInput.Sum(numbers, multiplier, precision);
+        Console.WriteLine($"Sum: {sumResult}");
+    }
+    else if (command.Name == "name")
+    {
+        string name = string.Join(" ", command.UnmatchedTokens.Take(3));
+        Console.WriteLine($"Hello, {name}!");
+    }
+}
+else
+{
+    foreach (var error in command.Errors)
+    {
+        Console.WriteLine($"Error: {error}");
+    }
+}
+
 // Collections.Basic();
 //
 // var set = Collections.CreateSortedSet(new string[] {
@@ -23,16 +50,3 @@
 // {
 //     Console.WriteLine(number);
 // }
-
-double balance = 0;
-foreach (var record in Collections.TransactionRecords(Collections.BankRecords))
-{
-    Console.WriteLine(record);
-    balance += record switch
-    {
-        Deposit d => d.Amount,
-        Withdrawal w => w.Amount,
-        _ => 0
-    };
-}
-Console.WriteLine("The account balance is: {0:C}", balance);

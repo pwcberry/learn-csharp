@@ -72,32 +72,42 @@ WITHDRAWAL,  400, entertainment
         return numbers;
     }
 
-    public static IEnumerable<object?> TransactionRecords(string inputText)
+    public static IEnumerable<ITransaction> TransactionRecords(string inputText)
     {
         var reader = new StringReader(inputText);
         string? line;
         while ((line = reader.ReadLine()) is not null)
         {
             var parts = line.Split(',').Select(x => x.Trim()).ToArray();
-            if (double.TryParse(parts[1], out var amount))
+            if (decimal.TryParse(parts[1], out var amount))
             {
-                yield return parts[0] switch
-                {
-                    "DEPOSIT" => new Deposit(amount, parts[2]),
-                    "WITHDRAWAL" => new Withdrawal(amount, parts[2]),
-                    _ => null
-                };
+                yield return parts[0] == "DEPOSIT" ? new Deposit(amount, parts[2]) : new Withdrawal(amount, parts[2]);
+                
+                // yield return parts[0] switch
+                // {
+                //     "DEPOSIT" => new Deposit(amount, parts[2]),
+                //     "WITHDRAWAL" => new Withdrawal(amount, parts[2]),
+                //     _ => null
+                // };
             }
         }
     }
+
+    public static decimal GetBalance(IEnumerable<ITransaction> transactions) => transactions.Sum(x => x.Amount);
+    
 }
 
-public record Deposit(double Amount, string Description)
+public interface ITransaction
+{
+    public decimal Amount { get; }
+}
+
+public record Deposit(decimal Amount, string Description) : ITransaction
 {
     public override string ToString() =>  $"{Amount,12:C}(+): {Description}";
 }
 
-public record Withdrawal(double Amount, string Description)
+public record Withdrawal(decimal Amount, string Description): ITransaction
 {
     public override string ToString() =>  $"{Amount,12:C}(-): {Description}";
 }
