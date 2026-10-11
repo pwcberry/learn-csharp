@@ -3,13 +3,17 @@ using CSharp.Beginners.Commands;
 
 namespace CSharp.Beginners.Programs;
 
-public class ArithmeticSubProgram : SubProgram
+public class ArithmeticProgram : SubProgram
 {
     public override void Run(string[] inputArguments, TextWriter output)
     {
         var commandParser = new ArithmeticCommand();
-        var commandResult = commandParser.Parse(inputArguments) as ArithmeticCommandResult;
-
+        var commandResult = commandParser.Parse(inputArguments) switch
+        {
+            ArithmeticCommandResult arithmeticResult => arithmeticResult,
+            _ => null
+        };
+        
         if (commandResult is null || !commandResult.Name.Equals("sum", StringComparison.OrdinalIgnoreCase))
         {
             output.WriteLine(
