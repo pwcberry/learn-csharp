@@ -76,7 +76,7 @@ public class CollectionsProgram : SubProgram
                 numbers.Add(nextNumber);
             }
         } while (!maximumReached);
-        
+
         return numbers;
     }
 }
@@ -88,16 +88,16 @@ public class MyStringComparer : IEqualityComparer<string>, IComparer<string>
 {
     public int Compare(string? x, string? y)
     {
-        return x?.ToUpper()?.CompareTo(y?.ToUpper()) ?? 0;
+        return string.Compare(x, y, StringComparison.OrdinalIgnoreCase);
     }
 
     public bool Equals(string? x, string? y)
     {
-        return string.Equals(x?.ToUpper(), y?.ToUpper());
+        return string.Equals(x, y, StringComparison.OrdinalIgnoreCase);
     }
 
     public int GetHashCode(string obj)
     {
-        return obj.GetHashCode();
+        return obj.GetHashCode(StringComparison.OrdinalIgnoreCase);
     }
 }

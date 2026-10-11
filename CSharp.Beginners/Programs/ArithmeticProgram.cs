@@ -26,20 +26,16 @@ public class ArithmeticProgram : SubProgram
             return;
         }
 
-        if (!commandResult.Options.TryGetValue("--multiply", out var multiplier))
-        {
-            multiplier = "1";
-        }
+        // The options are always present but hold null when not supplied on the command line.
+        commandResult.Options.TryGetValue("--multiply", out var multiplier);
+        commandResult.Options.TryGetValue("--precision", out var precision);
+        multiplier ??= "1";
+        precision ??= "0";
 
-        if (!commandResult.Options.TryGetValue("--precision", out var precision))
-        {
-            precision = "0";
-        }
+        output.WriteLine("Calculating sum on these numbers: {0}", string.Join(", ", commandResult.Numbers));
+        output.WriteLine($"Multiplier: {multiplier}, Precision: {precision}");
 
-        Console.WriteLine("Calculating sum on these numbers: {0}", string.Join(", ", commandResult.Numbers));
-        Console.WriteLine($"Multiplier: {multiplier}, Precision: {precision}");
-
-        var sumResult = Sum(commandResult.Numbers.ToArray(), multiplier!, precision!);
+        var sumResult = Sum(commandResult.Numbers.ToArray(), multiplier, precision);
         output.WriteLine("Sum: {0}", sumResult);
     }
 

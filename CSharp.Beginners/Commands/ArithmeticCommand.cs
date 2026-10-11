@@ -43,7 +43,7 @@ public class ArithmeticCommand
     public ICommandResult Parse(string[] args)
     {
         // Parse once and read everything from the single ParseResult.
-        ParseResult parseResult = _rootCommand.Parse(args);
+        var parseResult = _rootCommand.Parse(args);
 
         var options = new Dictionary<string, string?>
         {

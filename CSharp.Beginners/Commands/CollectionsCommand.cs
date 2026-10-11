@@ -34,14 +34,15 @@ public class CollectionsCommand
     public ICommandResult Parse(string[] args)
     {
         // Parse once and read everything from the single ParseResult.
-        ParseResult parseResult = _rootCommand.Parse(args);
+        var parseResult = _rootCommand.Parse(args);
 
         return new CollectionsCommandResult(
             parseResult.CommandResult.Command.Name,
             new Dictionary<string, string?>(),
             parseResult.UnmatchedTokens,
             parseResult.Errors.Select(e => e.Message),
-            parseResult.GetValue(_itemsArgument) ?? Enumerable.Empty<string>()
+            // GetValue throws when a required argument is missing, so only read it from a valid parse.
+            (parseResult.Errors.Count == 0 ? parseResult.GetValue(_itemsArgument) : null) ?? Enumerable.Empty<string>()
         );
     }
 }
