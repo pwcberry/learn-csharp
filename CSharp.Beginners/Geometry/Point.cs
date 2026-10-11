@@ -1,4 +1,4 @@
-namespace CSharp.Beginners;
+namespace CSharp.Beginners.Geometry;
 
 public readonly struct Point(int x, int y) : IEquatable<Point>
 {

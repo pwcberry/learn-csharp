@@ -1,4 +1,6 @@
-﻿namespace CSharp.Beginners.Tests;
+﻿using CSharp.Beginners.Geometry;
+
+namespace CSharp.Beginners.Tests;
 
 public class PointTests
 {
