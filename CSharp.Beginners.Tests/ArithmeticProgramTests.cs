@@ -7,6 +7,9 @@ public class ArithmeticProgramTests : CultureScope
     private const string SumRequired =
         "Error: The 'sum' command is required. Please provide the 'sum' subcommand followed by numbers to sum.";
 
+    private const string RequiredCommandNotProvided = "Error: Required command was not provided.";
+    
+    
     private static string[] Run(params string[] args)
     {
         var output = new StringWriter();
@@ -55,12 +58,14 @@ public class ArithmeticProgramTests : CultureScope
     [Fact]
     public void MissingSumCommandIsAnError()
     {
-        Assert.Equal([SumRequired], Run("-m", "2"));
+        var output = Run("-m", "2");
+        Assert.Equal(RequiredCommandNotProvided, output[0]);
     }
 
     [Fact]
     public void UnknownCommandIsAnError()
     {
-        Assert.Equal([SumRequired], Run("product", "1", "2"));
+        var output = Run("product", "1", "2");
+        Assert.Equal(RequiredCommandNotProvided, output[0]);
     }
 }

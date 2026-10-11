@@ -2,7 +2,7 @@ using System.CommandLine;
 
 namespace CSharp.Beginners.Commands;
 
-public class BankingCommand
+public class BankingCommand : ICommand
 {
     private readonly RootCommand _rootCommand;
     

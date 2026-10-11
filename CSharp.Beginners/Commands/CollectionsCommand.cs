@@ -2,7 +2,7 @@ using System.CommandLine;
 
 namespace CSharp.Beginners.Commands;
 
-public class CollectionsCommand
+public class CollectionsCommand : ICommand
 {
     private readonly RootCommand _rootCommand;
     

@@ -3,29 +3,16 @@ using CSharp.Beginners.Commands;
 
 namespace CSharp.Beginners.Programs;
 
-public class ArithmeticProgram : SubProgram
+public class ArithmeticProgram : SubProgram<ArithmeticCommand, ArithmeticCommandResult>
 {
     public override void Run(string[] inputArguments, TextWriter output)
     {
-        var commandParser = new ArithmeticCommand();
-        var commandResult = commandParser.Parse(inputArguments) switch
-        {
-            ArithmeticCommandResult arithmeticResult => arithmeticResult,
-            _ => null
-        };
+        var (commandResult, hasErrors) = ParseCommand(inputArguments, output);
+
+        // If the "sum" command is not supplied, the commandResult will be null and hasErrors will be true.
+        if (hasErrors)
+            return;
         
-        if (commandResult is null || !commandResult.Name.Equals("sum", StringComparison.OrdinalIgnoreCase))
-        {
-            output.WriteLine(
-                "Error: The 'sum' command is required. Please provide the 'sum' subcommand followed by numbers to sum.");
-            return;
-        }
-
-        if (CheckForErrors(commandResult, output))
-        {
-            return;
-        }
-
         // The options are always present but hold null when not supplied on the command line.
         commandResult.Options.TryGetValue("--multiply", out var multiplier);
         commandResult.Options.TryGetValue("--precision", out var precision);

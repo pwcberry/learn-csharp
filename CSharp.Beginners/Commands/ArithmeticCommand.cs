@@ -4,7 +4,7 @@ using System.Globalization;
 
 namespace CSharp.Beginners.Commands;
 
-public class ArithmeticCommand
+public class ArithmeticCommand : ICommand
 {
     private readonly RootCommand _rootCommand;
 

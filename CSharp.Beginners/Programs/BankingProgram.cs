@@ -2,7 +2,7 @@ using CSharp.Beginners.Commands;
 
 namespace CSharp.Beginners.Programs;
 
-public class BankingProgram: SubProgram
+public class BankingProgram: SubProgram<BankingCommand, BankingCommandResult>
 {
     private static readonly string _transactionRecords = """
  DEPOSIT,   10000, Initial balance
@@ -39,23 +39,11 @@ public class BankingProgram: SubProgram
     
     public override void Run(string[] inputArguments, TextWriter output)
     {
-        var commandParser = new BankingCommand();
-        var commandResult = commandParser.Parse(inputArguments) switch 
-        {
-            BankingCommandResult bankingResult => bankingResult,
-            _ => null
-        };
-        
-        if (commandResult is null)
-        {
-            output.WriteLine("Error: No valid command was provided. Please provide a valid subcommand.");
+        var (commandResult, hasErrors) = ParseCommand(inputArguments, output);
+
+        // Any unknown commands will be reported as errors
+        if (hasErrors)
             return;
-        }
-        
-        if (CheckForErrors(commandResult, output))
-        {
-            return;
-        }
         
         switch(commandResult.Name.ToLower())
         {
@@ -75,9 +63,6 @@ public class BankingProgram: SubProgram
                 break;
             case "deposit":
                 Deposit(commandResult, output);
-                break;
-            default:
-                output.WriteLine($"Error: Unknown command '{commandResult.Name}'.");
                 break;
         }
     }

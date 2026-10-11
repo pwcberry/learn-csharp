@@ -2,27 +2,15 @@ using CSharp.Beginners.Commands;
 
 namespace CSharp.Beginners.Programs;
 
-public class CollectionsProgram : SubProgram
+public class CollectionsProgram : SubProgram<CollectionsCommand, CollectionsCommandResult>
 {
     public override void Run(string[] inputArguments, TextWriter output)
     {
-        var commandParser = new CollectionsCommand();
-        var commandResult = commandParser.Parse(inputArguments) switch
-        {
-            CollectionsCommandResult collectionsResult => collectionsResult,
-            _ => null
-        };
+        var (commandResult, hasErrors) = ParseCommand(inputArguments, output);
 
-        if (commandResult is null)
-        {
-            output.WriteLine("Error: No valid command was provided. Please provide a valid subcommand.");
+        // Any unknown commands will be reported as errors
+        if (hasErrors)
             return;
-        }
-
-        if (CheckForErrors(commandResult, output))
-        {
-            return;
-        }
 
         switch (commandResult.Name.ToLower())
         {
