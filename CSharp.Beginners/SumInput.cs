@@ -9,13 +9,13 @@ public static class SumInput
         if (args.Any(x => x.Contains('.')) || multiplier.Contains('.'))
         {
             var m = float.Parse(multiplier);
-            var sum = args.ToList().Select(float.Parse).Sum() * m;
+            var sum = args.Select(float.Parse).Sum() * m;
             return sum.ToString($"F{precision}", CultureInfo.InvariantCulture);
         }
         else
         {
             var m = int.Parse(multiplier);
-            var sum = args.ToList().Select(int.Parse).Sum() * m;
+            var sum = args.Select(int.Parse).Sum() * m;
             return sum.ToString();
         }
     }
