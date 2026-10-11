@@ -2,12 +2,12 @@ using CSharp.Beginners.Commands;
 
 namespace CSharp.Beginners.Tests;
 
-public class ArithmeticCommandsTests
+public class ArithmeticCommandTests
 {
     [Fact]
     public void SumCommandCollectsNumbersArgument()
     {
-        var result = new ArithmeticCommands().Parse(["sum", "1", "2", "3"]);
+        var result = (ArithmeticCommandResult) new ArithmeticCommand().Parse(["sum", "1", "2", "3"]);
 
         Assert.Equal("sum", result.Name);
         Assert.Equal(["1", "2", "3"], result.Numbers);
@@ -18,7 +18,7 @@ public class ArithmeticCommandsTests
     [Fact]
     public void NonNumericArgumentsAreDropped()
     {
-        var result = new ArithmeticCommands().Parse(["sum", "1", "abc", "2.5", "1e5", "NaN", "3"]);
+        var result = (ArithmeticCommandResult) new ArithmeticCommand().Parse(["sum", "1", "abc", "2.5", "1e5", "NaN", "3"]);
 
         Assert.Equal(["1", "2.5", "3"], result.Numbers);
         Assert.Empty(result.Errors);
@@ -27,7 +27,7 @@ public class ArithmeticCommandsTests
     [Fact]
     public void NegativeNumbersAreKept()
     {
-        var result = new ArithmeticCommands().Parse(["sum", "-1", "-2.5"]);
+        var result = (ArithmeticCommandResult) new ArithmeticCommand().Parse(["sum", "-1", "-2.5"]);
 
         Assert.Equal(["-1", "-2.5"], result.Numbers);
     }
@@ -35,7 +35,7 @@ public class ArithmeticCommandsTests
     [Fact]
     public void OptionsAreReadAfterTheSubcommand()
     {
-        var result = new ArithmeticCommands().Parse(["sum", "1.5", "2", "-m", "2", "--precision", "3"]);
+        var result = (ArithmeticCommandResult) new ArithmeticCommand().Parse(["sum", "1.5", "2", "-m", "2", "--precision", "3"]);
 
         Assert.Equal("2", result.Options["--multiply"]);
         Assert.Equal("3", result.Options["--precision"]);
@@ -45,7 +45,7 @@ public class ArithmeticCommandsTests
     [Fact]
     public void MissingOptionValuesAreNull()
     {
-        var result = new ArithmeticCommands().Parse(["sum", "1"]);
+        var result = (ArithmeticCommandResult) new ArithmeticCommand().Parse(["sum", "1"]);
 
         Assert.Null(result.Options["--multiply"]);
         Assert.Null(result.Options["--precision"]);
@@ -54,7 +54,7 @@ public class ArithmeticCommandsTests
     [Fact]
     public void SumWithNoNumbersIsEmpty()
     {
-        var result = new ArithmeticCommands().Parse(["sum"]);
+        var result = (ArithmeticCommandResult) new ArithmeticCommand().Parse(["sum"]) ;
 
         Assert.Empty(result.Numbers);
         Assert.Empty(result.Errors);
@@ -63,7 +63,7 @@ public class ArithmeticCommandsTests
     [Fact]
     public void UnknownTokensOnRootCommandAreErrors()
     {
-        var result = new ArithmeticCommands().Parse(["bogus"]);
+        var result = (ArithmeticCommandResult) new ArithmeticCommand().Parse(["bogus"]);
 
         Assert.NotEmpty(result.Errors);
     }

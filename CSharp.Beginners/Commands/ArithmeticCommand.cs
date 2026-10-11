@@ -4,7 +4,7 @@ using System.Globalization;
 
 namespace CSharp.Beginners.Commands;
 
-public class ArithmeticCommands
+public class ArithmeticCommand
 {
     private readonly RootCommand _rootCommand;
 
@@ -27,9 +27,9 @@ public class ArithmeticCommands
         CustomParser = ParseNumbers
     };
 
-    public ArithmeticCommands()
+    public ArithmeticCommand()
     {
-        _rootCommand = new RootCommand("Arithmetic Application")
+        _rootCommand = new RootCommand("Arithmetic Program")
         {
             new Command("sum", "Sums a list of numbers")
             {
@@ -40,7 +40,7 @@ public class ArithmeticCommands
         };
     }
 
-    public CommandResult Parse(string[] args)
+    public ICommandResult Parse(string[] args)
     {
         // Parse once and read everything from the single ParseResult.
         ParseResult parseResult = _rootCommand.Parse(args);
@@ -51,12 +51,13 @@ public class ArithmeticCommands
             [_precisionOption.Name] = parseResult.GetValue(_precisionOption)
         };
 
-        return new CommandResult(
+        return new ArithmeticCommandResult(
             parseResult.CommandResult.Command.Name,
-            parseResult.GetValue(_numbersArgument) ?? [],
             options,
             parseResult.UnmatchedTokens,
-            parseResult.Errors.Select(e => e.Message).ToList());
+            parseResult.Errors.Select(e => e.Message).ToList(),
+            parseResult.GetValue(_numbersArgument) ?? []
+        );
     }
 
     // Keeps only tokens that SumInput can parse: integers, or floats when they contain a '.'.
@@ -71,3 +72,5 @@ public class ArithmeticCommands
             ? float.TryParse(value, NumberStyles.Float, CultureInfo.InvariantCulture, out var f) && float.IsFinite(f)
             : int.TryParse(value, NumberStyles.Integer, CultureInfo.InvariantCulture, out _);
 }
+
+public record ArithmeticCommandResult(string Name, IDictionary<string, string?> Options, IEnumerable<string> UnmatchedTokens, IEnumerable<string> Errors, IEnumerable<string> Numbers) : ICommandResult;
