@@ -1,6 +1,6 @@
 using CSharp.Beginners.Programs;
 
-namespace CSharp.Beginners.Tests;
+namespace CSharp.Beginners.Tests.Programs;
 
 public class CollectionsProgramTests
 {

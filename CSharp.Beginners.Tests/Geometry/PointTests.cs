@@ -1,6 +1,6 @@
 ﻿using CSharp.Beginners.Geometry;
 
-namespace CSharp.Beginners.Tests;
+namespace CSharp.Beginners.Tests.Geometry;
 
 public class PointTests
 {

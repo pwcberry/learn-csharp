@@ -1,6 +1,6 @@
 using CSharp.Beginners.Commands;
 
-namespace CSharp.Beginners.Tests;
+namespace CSharp.Beginners.Tests.Commands;
 
 public class BankingCommandTests
 {
