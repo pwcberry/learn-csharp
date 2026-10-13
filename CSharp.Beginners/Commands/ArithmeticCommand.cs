@@ -55,7 +55,7 @@ public class ArithmeticCommand : ICommand
             parseResult.CommandResult.Command.Name,
             options,
             parseResult.UnmatchedTokens,
-            parseResult.Errors.Select(e => e.Message).ToList(),
+            parseResult.Errors.Select(e => e.Message),
             parseResult.GetValue(_numbersArgument) ?? []
         );
     }
